@@ -26,10 +26,22 @@
         display: inline-block;
         height: 36px;
       }
+      .social-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      .social-list > li {
+        display: inline-block;
+      }
 
       /* BIO STYLES */
       .bio-wrapper {
         font-size: 24px;
+        margin: auto;
+        max-width: 960px;
+        overflow: hidden;
+        margin: 0 auto 2%;
       }
       .bio-wrapper:after {
         visibility: hidden;
@@ -44,11 +56,18 @@
         box-sizing: border-box;
         float: left;
         font-size: 1rem;
+        margin: 40px 1% 0;
         padding: 2%;
-        width: 25%;
+        width: 23%;
       }
       .bio-box h3 {
+        color: #fff;
         font-size: 1.5em;
+        margin: -40px 0 1em;
+        text-align: center;
+      }
+      .bio-box img {
+        width: 100%;
       }
       .bio-copy {
         font-size: 1em;
@@ -61,7 +80,7 @@
   <body>
     <div class="full-hero hero-home">
       <h1>I'm an h1</h1>
-      <ul>
+      <ul class="social-list">
         <li>
           <a href="https://example.com/" class="social-link">Link</a>
         </li>
@@ -76,6 +95,7 @@
     <h2>I'm an h2</h2>
     <div class="bio-wrapper">
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="https://twitter.com/mhartl" class="social-link">here</a>
         <div class="bio-copy">
@@ -95,6 +115,7 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
         <div class="bio-copy">
@@ -107,6 +128,7 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
         <div class="bio-copy">
@@ -119,6 +141,7 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400">
         <h3>??</h3>
         <p>
           The Future
