@@ -4,7 +4,15 @@ html {
   padding: 0 30px;
 }
 body {
+  display: flex;
+  flex-direction: column;
   font-family: helvetica, arial, sans;
+  min-height: 100vh;
+}
+.content-container {
+  flex-grow: 1;
+  padding-top: 10vh;
+  width: 100%;
 }
 h1 {
   font-size: 7vw;
@@ -115,19 +123,19 @@ h2 ~ p {
   background-color: #c7dbfc;
   background-size: cover;
   box-sizing: border-box;
-  height: 100vh;
+  height: 90vh;
   padding-top: 10vh;
 }
 .full-hero:after {
+  bottom: 2vh;
   border: 10px solid;
   border-color: #fff transparent transparent;
-  bottom: 2vh;
   content: "";
   height: 0;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
   width: 0;
-  display: block;
 }
 .hero-home {
   background-image: url(/images/shark.jpg);
