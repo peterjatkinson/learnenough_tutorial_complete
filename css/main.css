@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 .content-container {
-  flex-grow: 1;
+  flex: 1 1 auto;
   padding-top: 10vh;
   width: 100%;
 }
@@ -204,10 +204,10 @@ h2 ~ p {
   text-align: center;
 }
 .home-callout {
-  align-items: flex-end;
+  display: flex;
+  align-items: center;
   background-color: #000;
   color: #fff;
-  display: flex;
   padding: 7vh 0;
 }
 .home-callout h3 {
@@ -215,15 +215,13 @@ h2 ~ p {
   margin-top: 1em;
 }
 .callout-title {
-  flex-grow: 1;
-  flex-basis: 0;
+  flex: 1;
   font-size: 5.75vw;
   text-transform: uppercase;
   text-align: right;
 }
 .callout-copy {
-  flex-shrink: 0;
-  flex-basis: 45em;
+  flex: 0 0 45em;
   font-size: 0.8rem;
   padding: 0 3vw;
 }
