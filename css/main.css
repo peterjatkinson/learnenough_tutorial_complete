@@ -400,3 +400,9 @@ h2 ~ p {
   height: 6em;
   margin-bottom: 1.5em;
 }
+.blog-title-list li img {
+  border-radius: 99px;
+  display: inline-block;
+  height: 2.5em;
+  vertical-align: middle;
+}
